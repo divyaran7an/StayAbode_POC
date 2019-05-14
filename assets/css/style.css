@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i,800');
+*
+{
+	font-family: 'Open Sans', sans-serif !important;
+	letter-spacing: 0.8px;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+body
+{
+	background: #2A2D43;
+	height: 100vh;
+}
+#landing-cta
+{
+	margin-top: 5rem;
+}
+#landing-cta label
+{
+	letter-spacing: 0.8;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+	padding: 0.2rem 0 0.2rem 1rem;
+	font-weight: 600;
+}
+form.form-box
+{
+	display: block;
+	margin: 2rem auto 0rem auto;
+}
+form.form-box .form-control
+{
+    padding: .8rem .75rem;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #2A2D43;
+    border: none;
+    border-radius: 2px;
+}
+.btn-primary.btn-main
+{
+	display: block;
+	width: 100%;
+	background: #7F2CCB;
+    padding: 1rem .75rem;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 2px;
+	display: block;
+	width: 100%;
+	border: none;
+}
+.btn-primary.btn-main.bordered
+{
+	background: none;
+	border: 1px solid #7F2CCB;
+	color: #7F2CCB;
+}
+.center-everything
+{
+	text-align: center;
+	display: block;
+	margin: 5rem auto;
+}
+img.main-img
+{
+	display: block;
+	margin: 0 auto;
+	height: 140px;
+	width: auto;
+}
+.confirm-title
+{
+	font-weight: bold;
+	letter-spacing: 1px;
+	animation: blinker 1.6s ease-in-out infinite alternate; 
+	margin: 2rem; 
+}

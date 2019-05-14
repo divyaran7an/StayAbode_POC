@@ -1,1 +1,54 @@
-<h1>Hey</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StayAbode</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="row" id="landing-cta" class="center-everything">
+<div class="col-3 mx-auto">
+<img src="assets/images/microwave.png" class="main-img mt-5">
+<form class="form-box mt-5" name="submit-to-google-sheet">
+<div class="form-row">
+<div class="col-md-12">
+  <div class="form-group">
+    <label for="name">Employee Name</label>
+    <div class="form-row">
+    <div class="col-md-12">
+    <input type="text" class="form-control" id="name" placeholder="...">
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</form>
+<div class="row">
+  <div class="col-6">
+    <button id="on" type="button" class="btn btn-primary btn-main">Switch on</button>
+  </div>
+  <div class="col-6">
+    <button id="off" type="button" class="btn btn-primary btn-main bordered">Switch off</button>
+  </div>
+</div>
+</div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+$(function () {
+  $("#on").click(function(){
+  $.post("https://maker.ifttt.com/trigger/microwave_on/with/key/biklqwK5Q1qD02WyX3bvz3");
+  console.log("Switched on");
+  });
+  $("#off").click(function(){
+  $.post("https://maker.ifttt.com/trigger/microwave_off/with/key/biklqwK5Q1qD02WyX3bvz3");
+  console.log("Switched off");
+  });
+});
+</script>
+</body>
+</html>
